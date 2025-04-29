@@ -18,7 +18,8 @@ def dfs_path_length(edges, a, b):
         graph.setdefault(v, []).append(u)
     
     visited = set()
-    stack = [(a, 0)]
+    # Обход в глубину для поиска пути от a до b
+    stack = [(a, 0)] # (вершина, расстояние)
     
     while stack:
         vertex, distance = stack.pop()
