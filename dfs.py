@@ -6,6 +6,7 @@ def dfs_path_length(edges, a, b):
     for u, v in edges:
         all_nodes.add(u)
         all_nodes.add(v)
+    # Проверяем, что вершины a и b существуют в графе
     if a not in all_nodes:
         raise ValueError(f"Vertex {a} does not exist")
     if b not in all_nodes:
